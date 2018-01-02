@@ -85,7 +85,8 @@ void failure(char* p, int* f)
  
   int m = strlen(p);
  
-  while (i < m) {
+  while (i < m) 
+  {
     if (p[i] == p[j]) 
     {
       f[i] = j + 1; // j+1 matches up to the current character.
@@ -248,7 +249,8 @@ int encrypt()
 		printf("error in opening result file");
 		return 0;
 	}
-	do{
+	do
+	{
 		if(feof(fp))
 		{
 			flag=1;
